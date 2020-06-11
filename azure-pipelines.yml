@@ -39,7 +39,7 @@ stages:
       displayName: Scan image with Aqua
       inputs:
         image: 'captureorder:$(tag)'
-        scanType: 'local'
+        scanType: 'hosted'
         register: false
         hideBase: false
         showNegligible: false
