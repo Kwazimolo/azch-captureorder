@@ -39,12 +39,12 @@ stages:
       displayName: Scan image with Aqua
       inputs:
         image: 'captureorder:$(tag)'
-        scanType: 'hosted'
+        scanType: 'local'
         register: false
         hideBase: false
         showNegligible: false
         windowsScannerVersion: '4.2.0'
-        scanner: 'registry.aquasec.com/scanner:5.0'
+        scanner: 'registry.aquasec.com/scanner:4.6'
         connection: 'aqua-console'
         customFlags: '--layer-vulnerabilities'
         
